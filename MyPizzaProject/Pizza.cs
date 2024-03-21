@@ -14,7 +14,7 @@ namespace MyPizzaProject
     {
         public enum size {Undefined, Small, Medium, Large, X_Large };
         private size pizzaSize;
-        private ArrayList toppings;
+        private List<String> toppings;
         /// <summary>
         /// The size of the pizza
         /// </summary>
@@ -28,7 +28,7 @@ namespace MyPizzaProject
         public Pizza()
         {
             // Create an empty list of toppings for this new Pizza object
-            toppings = new ArrayList();
+            toppings = new List<String>();
             Size = size.Undefined;
         }
         /// <summary>
